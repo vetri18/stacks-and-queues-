@@ -1,10 +1,18 @@
-﻿namespace EmployeeWage
+﻿using System.Collections.Generic;
+
+namespace StackAndQueue
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Stacks and Queues Program");
+            LinkedListQueue list = new LinkedListQueue();
+
+            list.Enqueue(56);
+            list.Enqueue(30);
+            list.Enqueue(70);
+
+            list.Display();
         }
     }
 }
